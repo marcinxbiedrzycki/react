@@ -1,0 +1,31 @@
+{
+  "$schema": "./posts.schema.json",
+  "posts": [
+    {
+      "id": "6fd54e46-6908-45ed-9597-714f3e4d0e6d",
+      "slug": "w-poznaniu-nie-tylko-koziolki",
+      "title": "W Poznaniu nie tylko Koziołki",
+      "date": "2022-06-25",
+      "imageUrl": "/images/6fd54e46-6908-45ed-9597-714f3e4d0e6d.jpg",
+      "location": {
+        "city": "Poznań",
+        "latitude": "52.400188",
+        "longitude": "16.927549"
+      },
+      "content": "Lorem ipsum"
+    },
+    {
+      "id": "25bd7da9-03dc-4cc3-a6fb-e532e133f3ae",
+      "slug": "wroclaw-i-jego-krasnale",
+      "title": "Wrocław i jego krasnale",
+      "date": "2022-05-30",
+      "imageUrl": "/images/25bd7da9-03dc-4cc3-a6fb-e532e133f3ae.jpg",
+      "location": {
+        "city": "Wrocław",
+        "latitude": "51.110550",
+        "longitude": "17.025560"
+      },
+      "content": "Lorem ipsum"
+    }
+  ]
+}

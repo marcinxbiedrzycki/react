@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://journeys-blog.com/posts.schema.json",
+  "title": "Posts",
+  "description": "An posts collection",
+  "type": "object",
+  "properties": {
+    "posts": {
+      "description": "Collection",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "description": "UUID for blog post",
+            "type": "string"
+          },
+          "slug": {
+            "description": "Blog post title slug (must be unique)",
+            "type": "string"
+          },
+          "title": {
+            "description": "Blog post title",
+            "type": "string"
+          },
+          "content": {
+            "description": "Blog post content",
+            "type": "string"
+          },
+          "date": {
+            "description": "Y-m-d formatted date of journey",
+            "type": "string"
+          },
+          "imageUrl": {
+            "description": "URL to cover photo",
+            "type": "string"
+          },
+          "location": {
+            "description": "GPS formatted location of journey",
+            "type": "object",
+            "properties": {
+              "city": {
+                "description": "City name of location",
+                "type": "string"
+              },
+              "latitude": {
+                "description": "Latitude of location",
+                "type": "string"
+              },
+              "longitude": {
+                "description": "Longitude of location",
+                "type": "string"
+              }
+            },
+            "required": ["city", "latitude", "longitude"]
+          }
+        },
+        "required": [
+          "id",
+          "slug",
+          "title",
+          "content",
+          "date",
+          "imageUrl",
+          "location"
+        ]
+      }
+    }
+  },
+  "required": ["posts"]
+}

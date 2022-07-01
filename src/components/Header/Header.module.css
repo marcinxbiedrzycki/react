@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.brand-section {
+  margin-left: 0.5rem;
+}
+
+.brand-section > h1 {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.brand-section > h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+}
+
+.box-section {
+  display: flex;
+}

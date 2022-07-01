@@ -1,0 +1,86 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 117px;
+}
+
+.circle1 {
+  width: 117px;
+  height: 117px;
+  background: rgb(97 46 141);
+}
+
+.circle2 {
+  width: 97px;
+  height: 97px;
+  background: rgb(194 34 134);
+}
+
+.circle3 {
+  width: 78px;
+  height: 78px;
+  background: rgb(234 34 94);
+}
+
+.circle4 {
+  width: 58px;
+  height: 58px;
+  background: rgb(237 91 53);
+}
+
+.circle5 {
+  width: 39px;
+  height: 39px;
+  background: rgb(245 181 46);
+}
+
+.circle6 {
+  width: 19px;
+  height: 19px;
+  background: rgb(129 197 64);
+}
+
+.circle7 {
+  width: 10px;
+  height: 10px;
+  background: rgb(0 163 150);
+}
+
+.circle8 {
+  width: 5px;
+  height: 5px;
+  background: rgb(22 116 188);
+}
+
+.circle1,
+.circle2,
+.circle3,
+.circle4,
+.circle5,
+.circle6,
+.circle7,
+.circle8 {
+  border-bottom: none;
+  animation-duration: 4600ms;
+  animation-iteration-count: infinite;
+  animation-name: cssload-spin;
+  animation-timing-function: linear;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px rgb(0 0 0 / 10%);
+}
+
+@keyframes cssload-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
