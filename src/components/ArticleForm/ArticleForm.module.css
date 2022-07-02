@@ -1,0 +1,46 @@
+.error {
+  padding: 0;
+  margin: 0;
+  color: #E01414;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+}
+
+.input-label {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.input-label:first-child {
+  margin-top: 0;
+}
+
+.input {
+  width: calc(100% - 1rem);
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+.input-area {
+  min-height: 5.6rem;
+  max-height: 16.8rem;
+  resize: vertical;
+}
+
+.button {
+  padding: 0.6rem 1.1rem;
+  border: 0.1rem solid #4C7E80;
+  margin: 0.5rem 0;
+  background: #5F9EA0;
+  color: #F2F2F2;
+  cursor: pointer;
+  float: right;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.button:hover {
+  background: #4C7E80;
+}

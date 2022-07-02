@@ -11,5 +11,6 @@ router.get('/', (req, res) => res.status(200).json({
 router.use('/header-info', require('./header-info'));
 router.use('/articles', require('./articles'))
 router.use('/article', require('./article'))
+router.use('/admin/articles', require('./admin'))
 
 module.exports = router;

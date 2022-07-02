@@ -1,0 +1,36 @@
+.list {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.list > thead > tr > th,
+.list > tbody > tr > td {
+  padding: 8px;
+  border: 1px solid #3A3A3A;
+}
+
+.list > thead > tr > th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #5F9EA0;
+  color: #F2F2F2;
+  text-align: left;
+}
+
+.list > tbody > tr > td {
+  padding: 8px;
+  border: 1px solid #3A3A3A;
+}
+
+.list > tbody > tr:nth-child(even) {
+  background-color: #F2F2F2;
+}
+
+.list > tbody > tr:hover {
+  background-color: #DDDDDD;
+}
+
+.list > tbody > tr > td:last-child {
+  max-width: 3rem;
+  text-align: center;
+}

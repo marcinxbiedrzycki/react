@@ -1,0 +1,34 @@
+.button {
+  padding: 0.6rem 1.1rem;
+  border: 0.1rem solid #4C7E80;
+  margin: 0.5rem 0;
+  background: #5F9EA0;
+  color: #F2F2F2;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.button:hover {
+  background: #4C7E80;
+}
+
+.button:active {
+  position: relative;
+  top: 0.1rem;
+}
+
+.small {
+  padding: 0.4rem 0.6rem;
+  margin: 0.2rem;
+  font-size: 0.8rem;
+}
+
+.warning {
+  border-color: #FF8C00;
+  background: #FFA940;
+}
+
+.warning:hover {
+  background: #FF8C00;
+}

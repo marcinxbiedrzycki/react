@@ -8,6 +8,11 @@ import Footer from './components/Footer';
 import IndexPage from './pages/Index';
 import AboutPage from './pages/About';
 import ArticlePage from './pages/Article';
+import AdminLayout from './pages/Admin/Layout';
+import AdminListPage from './pages/Admin/List';
+import AdminAddPage from './pages/Admin/Add';
+import AdminEditPage from './pages/Admin/Edit';
+import AdminDeletePage from './pages/Admin/Delete';
 
 import './index.css';
 
@@ -20,6 +25,7 @@ root.render(
         links={[
           { children: 'Strona główna', to: '/' },
           { children: 'O mnie', to: '/about' },
+          { children: 'Admin', to: '/admin' },
         ]}
       />
       <main>
@@ -27,6 +33,12 @@ root.render(
           <Route path='/' element={<IndexPage />} />
           <Route path='/about' element={<AboutPage />} />
           <Route path='/article/:slug' element={<ArticlePage />} />
+          <Route path='/admin' element={<AdminLayout />}>
+            <Route path='' element={<AdminListPage />} />
+            <Route path='add' element={<AdminAddPage />} />
+            <Route path='edit/:id' element={<AdminEditPage />} />
+            <Route path='delete/:id' element={<AdminDeletePage />} />
+          </Route>
         </Routes>
       </main>
     </BrowserRouter>

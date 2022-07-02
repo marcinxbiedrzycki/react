@@ -46,6 +46,7 @@ module.exports = {
     ],
     'react/function-component-definition': ['error', { namedComponents: 'arrow-function' }],
     'react/prop-types': 'off',
+    'react/require-default-props': 'off',
     yoda: ['error', 'always'],
   },
   settings: {

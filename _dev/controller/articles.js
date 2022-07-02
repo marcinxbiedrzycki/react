@@ -11,7 +11,7 @@ const formatImageUrl = (url, req) => {
 
 router.get('/:page', (req, res) => {
   // @todo: add pagination
-  res.status(200).json(posts.map((post) => ({
+  res.status(200).json(posts.sort((p1, p2) => p1.date < p2.date ? 1 : -1).map((post) => ({
     ...post,
     imageUrl: formatImageUrl(post.imageUrl, req),
   })));
