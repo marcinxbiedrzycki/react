@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <footer className={clsx({ [styles.footer]: true })}>
-      Copyright &copy; {year} <strong>000000</strong> John Doe
+      Copyright &copy; {year} <strong>000000</strong> s13448 Marcin Biedrzycki
     </footer>
   );
 };
